@@ -15,6 +15,11 @@ namespace RazorApp.Pages
         public void OnGet()
         {
         }
+
+        public void Post()
+        {
+
+        }
     }
 
 }
