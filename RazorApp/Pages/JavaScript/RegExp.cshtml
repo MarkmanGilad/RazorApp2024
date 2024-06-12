@@ -1,0 +1,19 @@
+﻿@page
+@model RazorApp.Pages.JavaScript.RegExpModel
+@{
+}
+
+<br />
+<br />
+<script src="/js/RegExp.js"></script>
+
+<form id="form1">
+    <label for="text">text:</label>
+    <input type="text" name="txt" id="txt" onchange="chkText()" />
+    <br /> <br />
+    <div id="msg" style="width:400px; height:100px; border:solid"></div>
+    <br /> <br />
+    <input type="button" value="check" name="btn" id="btn" onclick="chkText()" />
+   
+</form>
+

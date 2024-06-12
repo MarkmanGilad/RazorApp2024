@@ -1,0 +1,109 @@
+﻿@page
+@model RazorApp.Pages.JavaScript.RegistrationModel
+@{
+}
+@section Scripts {
+    <script src="~/js/Registration.js"></script>
+}
+<style>
+    .valMsg {
+        color: red;
+    }
+</style>
+
+<h1>Registration</h1>
+
+<form id="form1" onsubmit="return validateForm()">
+    <table>
+        <tr>
+            <td style="width:30%">User Name</td>
+            <td style="width:30%">
+                <input type="text" name="userName" id="userName" oninput="userNameVal()" />
+            </td>
+            <td id="userNameMsg" class="valMsg" style="width:40%"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td>
+                <input type="password" name="password" id="password" />
+            </td>
+            <td id="passwordMsg" class="valMsg"></td>
+        </tr>
+        <tr>
+            <td>confirm password</td>
+            <td>
+                <input type="password" name="confirm" id="confirm" onchange="confirmFun()" />
+            </td>
+            <td id="confirmMsg" class="valMsg"></td>
+        </tr>
+        <tr>
+            <td>e-mail</td>
+            <td>
+                <input type="text" name="email" id="email" onchange="confirmemail()" />
+            </td>
+            <td id="emailMsg" class="valMsg"></td>
+        </tr>
+        <tr>
+            <td>Tell</td>
+            <td>
+                <input type="text" name="phone" id="phone" oninput="confirmPhone()" />
+            </td>
+            <td id="phoneMsg" class="valMsg"></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>
+                <input type="radio" name="gender" value="male" checked> Male
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="other"> Other
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>תחביבים</td>
+            <td>
+                <select name="hobies" id="hobies" onchange="confirmHobies()">
+                    <option value=""></option>
+                    <option value="music">Music</option>
+                    <option value="Footbal">Footbal</option>
+                    <option value="Basketball">Basketball</option>
+                    <option value="XBox">XBox</option>
+                </select>
+            </td>
+            <td id="msgHobies" class="valMsg"></td>
+        </tr>
+        <tr>
+            <td>תאריך לידה</td>
+            <td>
+                <input type="date" name="date" />
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                שאלת אימות
+            </td>
+            <td>
+                <select name="restorePassword">
+                    <option value=""></option>
+                    <option value="school">שם בית הספר היסודי שלך</option>
+                    <option value="Dog" selected>שם הכלב הראשון שלך</option>
+                    <option value="MotherName">שם הנעורים של אמך</option>
+                    <option value="hospital">מהו שם בית החולים בו נולדת</option>
+                </select>
+            </td>
+            <td>
+                <input type="text" name="restorePassword" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td style="text-align:center">
+                <input type="submit" name="submit" /> &nbsp; &nbsp;&nbsp;
+                <input type="reset" name="reset" />
+            </td>
+            <td></td>
+        </tr>
+    </table>
+</form>

@@ -1,0 +1,36 @@
+﻿@page
+@model RazorApp.Pages.JavaScript.ObjectsModel
+@{
+}
+
+<br />
+<br />
+
+<form id="myForm">
+    <label for="firstName">FirstName:</label>
+    <input type="text" id="firstName" /> &nbsp; &nbsp; &nbsp;
+    <label for="LastName">LastName:</label>
+    <input type="text" id="lastName" /> <br /> <br />
+    <label for="Year">YearOfBirth:</label>
+    <input type="text" id="year" /> &nbsp; &nbsp; &nbsp;
+    <label for="city">City:</label>
+    <input type="text" id="city" />
+    <label for="student">Student:</label>
+    <input type="checkbox" id="student" />
+    <br /> <br />
+    <input type="reset" />
+    <input type="button" id="btnPerson" value="person_click" onclick="person_click()" />
+    <input type="button" id="btnGet" value="Get" onclick="Get()" />
+    <input type="button" id="btnAge" value="Age" onclick="Age()" />
+    <input type="button" id="btnConstr" value="Construct" onclick="Constructor()" />
+</form>
+
+<br />
+<br />
+
+<br />
+<br />
+<div style="background-color:lightblue; width:300px; height:200px" id="myDiv">
+</div>
+
+<script src="~/js/Objects.js"></script>

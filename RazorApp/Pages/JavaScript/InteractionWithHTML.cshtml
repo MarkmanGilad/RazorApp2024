@@ -1,0 +1,32 @@
+﻿@page
+@model RazorApp.Pages.JavaScript.InteractionWithHTMLModel
+@{
+}
+<h1>IOnteraction witj HTML</h1>
+
+<button type="button" id="btn" onclick="btnChange()">change Div</button>
+<br />
+<br />
+<div style="background-color:lightblue; width:300px; height:200px" id="myDiv">
+</div>
+<button type="button" id="btnStyle" onclick="changeStyle()">change Style</button>
+<button type="button" id="btntoggle" onclick="toggleColor()">toggle color</button>
+
+<!-- select -->
+<label for="colors">Choose a color:</label>
+<select id="colors" name="colors" onchange="selectFun()">
+    <option value="null" selected="selected"></option>
+    <option value="red">Red</option>
+    <option value="blue">Blue</option>
+    <option value="green">Green</option>
+    <option value="yellow">Yellow</option>
+</select>
+<br />
+<br />
+<div id="div2"></div>
+
+
+
+@section Scripts {
+    <script src="~/js/InteractWithHTML.js"></script>
+}
