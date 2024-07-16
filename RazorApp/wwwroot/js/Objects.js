@@ -44,9 +44,9 @@ function Get() {
     person.student = document.getElementById("student").checked;
 
     var msgBox = document.getElementById("myDiv")
-    msgBox.innerText = person.firstName + " " + person.lastName;
-    msgBox.innerHtml += "<br/>";
-    msgBox.innerText += JSON.stringify(person);
+    msgBox.innerHTML = person.firstName + " " + person.lastName;
+    msgBox.innerHTML += "<br/>";
+    msgBox.innerHTML += JSON.stringify(person);
 }
 
 function Age() {
@@ -80,6 +80,5 @@ function Constructor() {
 
     var student3 = student2;
     student3.firstName = "Gilad";
-
-    document.getElementById("myDiv").innerHTML
+        
 }

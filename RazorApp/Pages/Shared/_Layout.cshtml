@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/RazorApp.styles.css" asp-append-version="true" />
+    @RenderSection("Gilad", required: false)
+
 </head>
 <body>
     <header>
@@ -26,7 +28,7 @@
                             <a class="nav-link text-light" asp-area="" asp-page="/Privacy">Privacy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-page="/Content/Index">Content</a>
+                            <a class="nav-link text-light" href="/Content/Index">Content</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" href="~/html/index.html">HTML</a>
@@ -54,7 +56,7 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-
+    
     @await RenderSectionAsync("Scripts", required: false)
 
 </body>
