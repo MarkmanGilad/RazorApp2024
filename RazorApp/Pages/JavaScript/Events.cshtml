@@ -2,6 +2,7 @@
 @model RazorApp.Pages.JavaScript.EventsModel
 @{
 }
+
 <script src="/js/Events.js"></script>
 <form id="form1">
     <!-- button -->
@@ -30,5 +31,6 @@
     <input type="text" id="text" name="text" onkeypress="return keyPressFun(event)" />
 
     <!-- submit -->
-    <!--<input type="submit" id="submit" name="submit" />-->
+    <br />
+    <input type="submit" id="submit" name="submit" onclick="return false"/>
 </form>

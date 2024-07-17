@@ -1,0 +1,16 @@
+﻿@page
+@model RazorApp.Pages.New_Pages.FlippingImgJSModel
+@{
+}
+
+<h1>Flipping images </h1>
+<img id="flipping_img" src="" width="300" />
+<hr />
+
+<script>
+    var imgNum = Math.floor(Math.random() * 5) + 1;
+    var source = "/img/"+ imgNum +".jpg";
+    var image = document.getElementById("flipping_img");
+    image.src = source;
+
+</script>

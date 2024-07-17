@@ -3,7 +3,7 @@ function btnChange() {
     //document.write("document write");
 
     var div = document.getElementById("myDiv");
-    div.innerHTML = "<p> New content </p>"
+    div.innerHTML += "New content"
     //document.getElementById("myDiv").innerHTML = "<p> New content </p>";
 
 }
@@ -33,10 +33,7 @@ function toggleColor() {
 function selectFun() {
 
     var select = document.getElementById("colors");
-
-
     var div = document.getElementById("div2");
-
     var myDiv = document.getElementById("myDiv");
 
     var i = select.selectedIndex;

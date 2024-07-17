@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/RazorApp.styles.css" asp-append-version="true" />
     @RenderSection("Gilad", required: false)
-
 </head>
 <body>
     <header>
@@ -40,13 +39,14 @@
                 </div>
             </div>
         </nav>
+        @RenderSection("Script_head", required: false)
     </header>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-
+    
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2024 - RazorApp - <a asp-area="" asp-page="/Privacy">Privacy</a>
@@ -58,7 +58,7 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     
     @await RenderSectionAsync("Scripts", required: false)
-
+    
 </body>
 </html>
 

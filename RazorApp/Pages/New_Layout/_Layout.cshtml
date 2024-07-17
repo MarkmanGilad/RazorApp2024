@@ -6,8 +6,24 @@
     <title>@ViewBag.Title</title>
 </head>
 <body>
+    @{
+        Random rnd = new Random();
+        int a = rnd.Next(1, 11);
+        string s = "/img/" + a + ".png";
+        <a src= @s></a>
+    }
+    <h1>Logo</h1>
     <div>
         @RenderBody()
     </div>
+    <h1>Section</h1>
+
+    @RenderSection("Section1", required: false)
+
+    <h2>kjhgsd;jkghsd;fgkjh</h2>
+
+    @RenderSection("Section2", required: false)
+
+
 </body>
 </html>

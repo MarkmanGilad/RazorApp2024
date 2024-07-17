@@ -38,7 +38,7 @@ function add(a,b) {
 
 function power(a, b) {
    
-    var res = 1;
+    var res = 1; // remark
     for (var i = 1; i <= b; i++ ) {
         res = res * a;
     }
@@ -49,7 +49,7 @@ function power(a, b) {
 
 
 //Main
-
+printHello();
 var num1 = parseInt(prompt("Enter number 1"));
 var num2 = parseInt(prompt("Enter number 2"));
 

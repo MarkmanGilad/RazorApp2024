@@ -1,0 +1,13 @@
+﻿@page
+@model RazorApp.Pages.New_Pages.FlippingImgModel
+@{
+    ViewData["Title"] = "Home page";
+    Random rnd = new Random();
+    int imgNum = rnd.Next(1, 6);
+    string source = $"/img/{imgNum}.jpg";
+}
+<h1>Flipping images </h1>
+<img src=@source width="300" />
+
+<h2>the name of the img file: @source</h2>
+<hr />
