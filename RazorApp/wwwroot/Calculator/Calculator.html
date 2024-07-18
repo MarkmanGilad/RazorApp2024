@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>מחשבון</title>
+    <link href="Calculator.css" rel="stylesheet" />
+    <script src="Calculator.js"></script>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <form>
+        <table>
+            <tr>
+                <td colspan="4">מחשבון</td>
+            </tr>
+            <tr>
+                <td colspan="4" id="operTd"></td>
+            </tr>
+            <tr>
+                <td id="res" colspan="4">
+                    <label id="lbl">0</label>
+                </td>
+                
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="%" onclick="operand(this)"/>
+                </td>
+                <td>
+                    <input type="button" value="AC" onclick="operand(this)"/>
+                </td>
+                <td>
+                    <input type="button" value=&lArr; onclick="dell(this)"/>
+                </td>
+                <td>
+                    <input type="button" value="/" onclick="operand(this)"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="7" onclick="digit(this)" />
+                </td>
+                <td>
+                    <input type="button" value="8" onclick="digit(this)"/>
+                </td>
+                <td>
+                    <input type="button" value="9" onclick="digit(this)" />
+                </td>
+                <td>
+                    <input type="button" value="x" onclick="operand(this)"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="4" onclick="digit(this)" />
+                </td>
+                <td>
+                    <input type="button" value="5" onclick="digit(this)"/>
+                </td>
+                <td>
+                    <input type="button" value="6" onclick="digit(this)"/>
+                </td>
+                <td>
+                    <input type="button" value="-" onclick="operand(this)"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="1" onclick="digit(this)" />
+                </td>
+                <td>
+                    <input type="button" value="2" onclick="digit(this)"/>
+                </td>
+                <td>
+                    <input type="button" value="3" onclick="digit(this)"/>
+                </td>
+                <td>
+                    <input type="button" value="+" onclick="operand(this)"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="+/-" onclick="operand(this)"/>
+                </td>
+                <td>
+                    <input type="button" value="0" onclick="digit(this)"/>
+                </td>
+                <td>
+                    <input type="button" value="." onclick="digit(this)"/>
+                </td>
+                <td>
+                    <input type="button" value="=" onclick="operand(this)"/>
+                </td>
+            </tr>
+
+
+        </table>
+    </form>
+    
+</body>
+</html>
