@@ -1,0 +1,24 @@
+﻿body {
+    background-image: url(../Img/The_wall.jpg);
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+#divPara {
+    direction: rtl;
+    background-color: aliceblue;
+    border: dashed 5px red;
+    padding: 10px;
+    margin: 20px
+}
+/*זהו עיצוב של גודל טקסט*/
+.bigFont {
+    font-size: 24px;
+}
+
+a {
+    color: whitesmoke;
+}
