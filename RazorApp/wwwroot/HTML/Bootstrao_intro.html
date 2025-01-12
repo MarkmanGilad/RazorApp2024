@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <title></title>
+    <style>
+        [class^="col"] {
+            border: solid 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid" style="background-color:aqua">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center">Bootstrap</h1>
+            </div>
+        </div>  
+        <div class="row">
+            <div class="col-5">
+                <p>text text text text text text text </p>
+            </div>
+            
+            <div class="col-3">
+                <img src="../Img/5.jpg" class="img-fluid" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">1</div>
+            <div class="col-2">2</div>
+            <div class="col-4">3</div>
+            <div class="col-5">
+                    
+            </div>
+        </div>
+       
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../Img/1.jpg" class="d-block w-50" alt="...">
+                </div>
+                
+                <div class="carousel-item">
+                    <img src="../Img/2.jpg" class="d-block w-50" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+﻿body {
+    background-color: lightpink;
+    background-image: url('../img/the_wall.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: green;
+    text-align: center;
+    font-size: 60px
+}
+
+#Header_div {
+    background-color: aquamarine
+}
+
+#div2 {
+    background-color: lightgoldenrodyellow;
+    color: blue;
+    width: 50%;
+    direction: rtl;
+    border: solid 3px black;
+    padding: 20px;
+    margin-left: auto
+}
+
+.color_red {
+    color: blueviolet;
+}
+
+.background_green {
+    background-color: forestgreen;
+}
+
+.h_dynamic:hover {
+    color: blue;
+    background-color: aqua;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 100px
+}
+
+#img_h:hover {
+    height: 400px
+}
+
+#Header_div h1 {
+    color: red
+}

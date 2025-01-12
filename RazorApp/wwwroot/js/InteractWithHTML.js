@@ -3,7 +3,7 @@ function btnChange() {
     //document.write("document write");
 
     var div = document.getElementById("myDiv");
-    div.innerHTML += "New content"
+    div.innerHTML += "Gilad "
     //document.getElementById("myDiv").innerHTML = "<p> New content </p>";
 
 }

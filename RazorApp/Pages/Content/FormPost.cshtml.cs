@@ -18,7 +18,7 @@ namespace RazorApp.Pages.Content
             //UserName = Request.Query["userName"];
             //Pass = Request.Query["pass"];
 
-            string txt = $"{userName} {pass}";
+            string txt = $"{userName} {pass} Get";
             return Content(txt, "text/plain");
         }
         public IActionResult OnPost (string userName, string pass) 
@@ -26,7 +26,7 @@ namespace RazorApp.Pages.Content
             //UserName = Request.Form["userName"];
             //Pass = Request.Form["pass"];
 
-            string txt = $"{userName} {pass}";
+            string txt = $"{userName} {pass} Post";
             return Content(txt, "text/plain");
         }
     }

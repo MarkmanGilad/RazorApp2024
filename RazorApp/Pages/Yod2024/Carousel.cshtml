@@ -1,0 +1,48 @@
+﻿@page
+@model RazorApp.Pages.Yod2024.CarouselModel
+@{
+}
+
+<h1>Carousel Bootstrap</h1>
+<style>
+    img {
+        width: 400px;
+    }
+</style>
+<div class="row">
+    <div class="col-5">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="~/img/1.jpg" class="d-block w-100" alt="Image">
+                </div>
+                <div class="carousel-item">
+                    <img src="~/img/2.jpg" class="d-block w-100 alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="~/img/3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="col-7">
+        <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/6nKREX6YeCY?si=aJCuZnLly_aTbqTq" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+        </iframe>
+    </div>
+</div>

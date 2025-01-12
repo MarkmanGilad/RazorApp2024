@@ -12,7 +12,7 @@ namespace RazorApp.Pages
             _logger = logger;
         }
 
-        public IActionResult OnGet() 
+        public IActionResult OnGet(string Username, string pass) 
         {
             //return Redirect("/HTML/Index.html");
             return Page();

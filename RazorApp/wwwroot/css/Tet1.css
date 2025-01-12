@@ -1,0 +1,41 @@
+﻿body {
+    background-color: lightpink
+}
+
+.book1back {
+    background-image: url('../img/1.jpg');
+}
+
+h1, h2 {
+    color: red;
+}
+
+h1 {
+    background-color: aliceblue
+}
+
+p {
+    background-color: lightblue
+}
+
+#bigF {
+    font-size: 30px
+}
+
+.bigFont {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.colorRed {
+    color: red;
+    background-color: black
+}
+
+.imgHover:hover {
+    width: 350px
+}
+
+.colorRed:hover {
+    color: blue
+}
