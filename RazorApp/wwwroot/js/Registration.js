@@ -20,8 +20,14 @@ function userNameVal() {
         msgBox.innerHTML = "You must enter user name";
         return false;
     }
-    if (!isLetter(userName[0])) {
+    regex = /^[a-zA-Z]/
+    if (!regex.test(userName)) {
         msgBox.innerHTML = "User name must start with a letter ";
+        return false;
+    }
+    regex = /^[a-z _\-A-Z0-9]{2,}$/
+    if (!regex.test(userName)) {
+        msgBox.innerHTML = "User name must contain only letters, numbers, space,- and _ ";
         return false;
     }
     msgBox.innerHTML = "";

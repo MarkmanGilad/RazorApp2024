@@ -1,0 +1,72 @@
+﻿@page
+@model RazorApp.Pages.Yod2024.RegisterModel
+@{
+}
+
+<h1>Register</h1>
+
+<div class="row justify-content-center align-items-center" style="height:75vh">
+    <div class="col-sm-10 col-md-8 col-lg-6 col-xl-4">
+        <div class="card h-100">
+            <div class="card-header"><h1>Register</h1></div>
+            <div class="card-body">
+                <form method="get">
+                    <div class="mb-3">
+                        <label for="Username" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="Username" name="Username" oninput="userNameVal()">
+                        <div id="UsernameMsg" class="text-danger"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control ms-auto" id="password" name="password">
+                        <div id="PasswordMsg" class="text-danger"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control ms-auto" id="firstName" name="firstName">
+                        <div id="firstNameMsg" class="text-danger"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control ms-auto" id="lasttName" name="lastName">
+                        <div id="lastNameMsg" class="text-danger"></div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="female" id="female" value="female">
+                            <label class="form-check-label" for="inlineRadio1">Female</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="male" id="male" value="male">
+                            <label class="form-check-label" for="inlineRadio2">male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="other" id="other" value="other">
+                            <label class="form-check-label" for="inlineRadio3">Other</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-select" aria-label="Recover question 1" name="Question1" id="Question1">
+                            <option selected></option>
+                            <option value="1">שם המשפחה של אימך</option>
+                            <option value="2">חיית המחמד הראשונה שלך</option>
+                            <option value="3">הצבע האהוב עליך</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Answer1" class="form-label">Answer</label>
+                        <input type="text" class="form-control ms-auto" id="firstName" name="firstName">
+                        <div id="firstNameMsg" class="text-danger"></div>
+                    </div>
+                    <div class="mb-3">
+                        <input type="date" id="birthday" name="birthday"/>
+                    </div>
+                    <div class="mb-3 form-text text-danger"></div>
+
+                    <button type="submit" class="btn btn-primary" onclick="return validate_login()">Submit</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+</div>

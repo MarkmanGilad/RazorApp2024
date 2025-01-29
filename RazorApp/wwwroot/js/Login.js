@@ -1,8 +1,9 @@
 ﻿function validate_login() {
     //alert("validate");
-    check_username()
+    res = true
+    res = check_username()
 
-    return false
+    return res
 
 
 }
@@ -13,9 +14,10 @@ function check_username() {
     //alert (username)
     if (username == "") {
         msg.innerHTML = "You must enter user name"
-
+        return false;
     } else {
         msg.innerHTML = "";
+        return true;
     }
     
 }
